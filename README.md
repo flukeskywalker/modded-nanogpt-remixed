@@ -25,8 +25,10 @@ So that's what this repo does.
 
 ![Plot](./img/plot-b.png)
 
-- Current time to train a tuned baseline transformer with Adam ('A' - `train_gpt_A.py` / [log](./log/A.txt)): 10 m 15 s
-- Current time to train the same tuned baseline transformer with Muon ('M' - `train_gpt_M.py` / [log](./log/M.txt)): 6 m 7 s
+| Model | Description                          | Training Time | Script           | Log         |
+|-------|--------------------------------------|---------------|------------------|-------------|
+| A     | Tuned baseline transformer with Adam | 10 m 15 s     | `train_gpt_A.py` | ./log/A.txt |
+| M     | Tuned baseline transformer with Muon | 6 m 7 s       | `train_gpt_M.py` | ./log/M.txt |
 
 Now we know that **we can train a modern 12-layer dense attention transformer baseline to 3.28 FineWeb val loss in about 10 mins on 8xH100 with AdamW, and in about 6 mins with Muon** with a pretty standard setup.
 

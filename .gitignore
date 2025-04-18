@@ -54,3 +54,5 @@ MANIFEST
 *.pyc
 *.swp
 *~ 
+copy.sh
+remote.sh
