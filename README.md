@@ -55,7 +55,7 @@ These can be added to obtain modified baselines for various purposes.
 
 ### Opt/Arch interactions
 
-Although we often like to see "pure ablations" where only component (either a specific model component or optimizer) changes, in practice such ablations don't tell the full story, because in general there can be interactions between model and optimizer.
+Although we often like to see "pure ablations" where only component (either a specific model component or data or optimizer) changes, in practice such ablations don't tell the full story, because there can be interactions between different components of the full setup.
 In the current baselines here, the Adam baseline (A) uses tied embedding/output weights, while the Muon baseline (M) uses logit soft-capping. It seemed difficult to quickly tune away these differences with the compute I have currently, and contributions towards this are welcome.
 
 ## License and Citation
